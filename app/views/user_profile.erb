@@ -1,0 +1,17 @@
+<div class="container">
+	
+	<h2><%=@user.username%>'s Profile!</h2>
+
+	<img id="profile_pic" src='<%=@user.profile_picture%>'>
+
+	<div id="profile">
+	  <p> full name: &nbsp<%=@user.full_name%> </p>
+	  <p> website: &nbsp<a href='<%=@user.website%>'><%=@user.website%></a></p>
+	  <p> bio: &nbsp<%=@user.bio%></p>
+	</div>
+    
+    <div id='photos'>
+      <%= erb photos? %>
+    </div>
+
+</div>

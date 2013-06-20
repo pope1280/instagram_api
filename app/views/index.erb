@@ -1,0 +1,21 @@
+<div class="container">
+  <h1> Fancy Ass Instagram API Usage! </h1>
+
+  <a href="/oauth/connect">Connect with Instagram</a>
+
+  <p> Or, search for an Instagram user: </p>
+
+  <form action='/' method='post'>
+    <input type='text' name='username' placeholder='instagram username'>
+    <input type='submit' value='yeah man'>
+  </form>
+
+ <div id='popular'>
+    <p><strong>Behold!</strong> &nbsp 9 "Popular" Images</p>
+
+    <% @images.each do |url| %>
+      <img src='<%=url%>'>
+    <% end %>
+  </div>
+
+</div>

@@ -1,0 +1,7 @@
+<p> Recent Photos: </p>
+
+<% if @media.length > 0 %> 
+  <% @media.each do |media_item| %>
+    <img src='<%="#{media_item.images.thumbnail.url}"%>'>
+  <% end %>
+<% end %>
